@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css"
+    integrity="sha512-F7WyTLiiiPqvu2pGumDR15med0MDkUIo5VTVyyfECR5DZmCnDhti9q5VID02ItWjq6fvDfMaBaDl2J3WdL1uxA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+
+  <title>Gerar Avatar WhatsApp Modesto</title>
+
+</head>
+
+<body class="p-3 border border-5">
+  <div class="container">
+    <div class="p-1 border border-3">
+      <section class="section">
+        <div class="container p-5">
+          <div class="text-center">
+            <h2 class="display-4 mb-5">
+              Avatar
+              <small class="text-muted">WhatsApp Modesto</small>
+            </h2>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="row pb-5">
+            <div class="col p-5">
+              <h1 class="display-6">Suas informações:</h1>
+              <form id="form">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Primeiro Nome:</label>
+                  <input class="form-control" id="name" placeholder="Primeiro Nome">
+                </div>
+                <div class="mb-3">
+                  <label for="designation" class="form-label">Setor:</label>
+                  <input class="form-control" id="designation" placeholder="Seu setor">
+                </div>
+                <div class="mb-3">
+                  <label for="checkPhone" class="form-label">Número de WhatsApp:</label>
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="phone" placeholder="(35) 3068-4000">
+                  </div>
+                </div>
+                <div class="input-group mb-3">
+                  <label class="input-group-text" for="file">Sua Foto</label>
+                  <input type="file" class="form-control" id="file">
+                </div>
+              </form>
+              <h1 class="display-6">Preview:</h1>
+              <div class="mb-3" id="company">
+                <div class="card is-primary mb-5 border-0 box-avatar">
+                  <div class="card-body" id="signature_container">
+                    <img class="file" id="myImg"
+                      src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZwogICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB2ZXJzaW9uPSIxLjAiCiAgIHdpZHRoPSIzMTUiCiAgIGhlaWdodD0iMzE1IgogICBpZD0ic3ZnMiIKICAgaW5rc2NhcGU6dmVyc2lvbj0iMC40OC4zLjEgcjk4ODYiCiAgIHNvZGlwb2RpOmRvY25hbWU9Ik5vX2ZyZWVfaW1hZ2VfLV93b21hbi5zdmciPgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTEyIj4KICAgIDxyZGY6UkRGPgogICAgICA8Y2M6V29yawogICAgICAgICByZGY6YWJvdXQ9IiI+CiAgICAgICAgPGRjOmZvcm1hdD5pbWFnZS9zdmcreG1sPC9kYzpmb3JtYXQ+CiAgICAgICAgPGRjOnR5cGUKICAgICAgICAgICByZGY6cmVzb3VyY2U9Imh0dHA6Ly9wdXJsLm9yZy9kYy9kY21pdHlwZS9TdGlsbEltYWdlIiAvPgogICAgICA8L2NjOldvcms+CiAgICA8L3JkZjpSREY+CiAgPC9tZXRhZGF0YT4KICA8c29kaXBvZGk6bmFtZWR2aWV3CiAgICAgcGFnZWNvbG9yPSIjZmZmZmZmIgogICAgIGJvcmRlcmNvbG9yPSIjNjY2NjY2IgogICAgIGJvcmRlcm9wYWNpdHk9IjEiCiAgICAgb2JqZWN0dG9sZXJhbmNlPSIxMCIKICAgICBncmlkdG9sZXJhbmNlPSIxMCIKICAgICBndWlkZXRvbGVyYW5jZT0iMTAiCiAgICAgaW5rc2NhcGU6cGFnZW9wYWNpdHk9IjAiCiAgICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjY0MCIKICAgICBpbmtzY2FwZTp3aW5kb3ctaGVpZ2h0PSI0ODAiCiAgICAgaWQ9Im5hbWVkdmlldzEwIgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBpbmtzY2FwZTp6b29tPSIwLjc0OTIwNjM1IgogICAgIGlua3NjYXBlOmN4PSIxNTcuNSIKICAgICBpbmtzY2FwZTpjeT0iMTU3LjUiCiAgICAgaW5rc2NhcGU6d2luZG93LXg9IjI4OSIKICAgICBpbmtzY2FwZTp3aW5kb3cteT0iOTUiCiAgICAgaW5rc2NhcGU6d2luZG93LW1heGltaXplZD0iMCIKICAgICBpbmtzY2FwZTpjdXJyZW50LWxheWVyPSJzdmcyIiAvPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM1IiAvPgogIDxwYXRoCiAgICAgZD0iTSAxODkuNTc5MjcsMzAuNjYxOTk1IEMgMTk5LjUyMzM2LDM2LjY2Mzc2MiAyMDcuOTQ1NTksMzguNTcyOTQ0IDIxNy45OTkxLDYwLjMyNzEwMiBDIDIzMi42MTc4LDkxLjk1OTU4MyAyMzIuNDU3MzcsOTkuMDQxMjM3IDIzOC41OTExMyw4OC4wMTQzMzggQyAyMzcuNDE5NzEsOTAuODcwNzU2IDIzNi4zMjU4MSw5My42OTgzMzcgMjM3LjE4MDcyLDk1LjgwMTM4IEMgMjM4LjQwMzA3LDk3LjA5MzE4NyAyMzkuNjI1NDMsOTYuNTk5MTYxIDI0MC44NDc3OSw5NS44MDEzOCBDIDI0MC4xMjkwOCw5Ni44NTExMTcgMjQxLjA5ODgsMTAwLjk5NjkzIDI0Mi44MjIzNyw5Ny44MjAyNDUgQyAyNDQuMDQ2MjgsOTUuNTY0NDcgMjQzLjk1MDcsOTUuNTEyOTY4IDI0My45NTA3LDk1LjUxMjk2OCBDIDI0NC44MDIyOCw5Ny41MDMzODUgMjQ0LjM0NzM1LDk5Ljk3MDI4NSAyNDQuNTE0ODYsMTAwLjcwNDMzIEMgMjQ2LjIwNzM2LDEwMi44MzM3MiAyNDcuODk5ODUsOTkuMjA3OTMzIDI0OS41OTIzNSw5NS41MTI5NjggQyAyNDkuOTY5NjYsOTguNjIxMjg1IDI0OS43MTc4MywxMDIuMDIyNDUgMjQ3LjMzNTY5LDEwNS4zMTg4NiBDIDI1Mi45NTc2NSwxMDcuNzAzNDQgMjUzLjA4MjgxLDEwMC44NjQxMyAyNTEuODQ5MDEsOTYuMDg5Nzg0IEMgMjUzLjcxOTQ5LDk5LjE1MTc2MSAyNTUuMjA0NjQsMTAyLjU4MzEgMjU0LjEwNTY4LDEwOC40OTEzNSBDIDI1NC43NjM4NywxMDkuNjUwOTggMjU1LjQyMjA2LDEwNy4wNzAwNyAyNTYuMDgwMjUsMTA2LjE4NDA5IEMgMjU1Ljg5MDE5LDEwNy44ODg3MiAyNTYuMDc3MywxMTAuOTU4MjEgMjU0LjUyODgsMTExLjQ0NzUzIEMgMjU1LjUzNTI0LDExMS44MTA4OCAyNTYuODEzMTEsMTEyLjg1MzY4IDI1OC42ODk1MSwxMTAuNzI2NTIgQyAyNTguODgwNDgsMTE1LjkwMzI4IDI1Ny4zNzk0NCwxMTkuNDMzMjUgMjUwLjI5NzU2LDExNy45MzY3MyBDIDI1Mi40MDUzMywxMTkuMzQ0MzcgMjUyLjc0MTA2LDEyOS4yNjc0MSAyNTYuNjQ0NDIsMTIyLjA0NjU2IEMgMjU4LjA0MDk1LDEyNC4yMDAzNiAyNTUuNjA5NTEsMTI1LjYzNzIyIDI1NC40NTgyOCwxMzAuMDQ5OSBDIDI1My43NjgzNSwxNDAuMzkwODkgMjQ3LjE5ODI1LDEzOS4wNDE3OSAyNDMuNDU3MDYsMTQzLjMxNjcgQyAyNDIuNDkxODksMTQ3Ljk1NjYzIDI0MS42Nzk2OSwxNDkuMjYwODEgMjQwLjIzNjY1LDE1Mi42ODk3MyBDIDIzOS4zMTY0MywxNTQuODc2MzEgMjQ1LjgyNTI5LDE1OS43Mjc2MSAyNDYuMDc5MjMsMTUwLjI4MTU3IEMgMjQ3LjE0ODMxLDE1OS43OTE3NCAyMzguOTIyOTYsMTU2LjE5OTU5IDIzNi4wMTUxMiwxNjAuNjk2NDIgQyAyMzQuOTcyMjksMTYxLjcyMTc5IDIzMy44MTUwMiwxNjIuNTI0ODggMjMyLjUyNjM1LDE2My4wNzI3IEMgMjIzLjY5MzM2LDE2OC41MjcgMjE4Ljg2MjcsMTgzLjMzMDgyIDIxNS4wMzcyMywxODUuMTM1OTcgQyAyMTMuNzUxNjQsMTg2LjQ3MDc3IDIwNS41MjMzNSwxODYuMzEzNjQgMjAxLjIxNTE4LDE4NS41Njg1OCBDIDE5OS4wNDY5OSwxOTAuODMyNDIgMTk3LjM0MDMsMTkzLjQwNzkxIDE5NC4yMzM2MywxOTYuMjM5NzEgQyAxOTAuODA1NDIsMjAzLjczMjAyIDE4OC4xMDU4MywyMjEuMDgyMjUgMTk4LjY3NjQ0LDIyOS42OTUxMiBDIDIxNi4yMjI0LDI0My45OTE0NiAyMjEuNTc3MzMsMjQ4LjE5OTggMjQ0LjAyMTIxLDI1Mi45ODQxMyBDIDI5My43ODQyMywyNjMuNTkyMDUgMjg5LjE1NDQzLDI5MC4xMzEyIDI5OC41ODI4NSwzMTEuNTMyNzUgTCAyMy40Njg5NTEsMzExLjMwNDA3IEMgMzEuNTk4NzksMjkxLjA5MzM1IDI3Ljc5NTg1MywyNjQuMjY4NTEgNzcuODc0NTU4LDI1MS45MDI2IEMgOTYuMDcxNzQyLDI0Ny40MDkxOCAxMDMuNTI3NDcsMjQzLjE5MDg4IDExOC44NDcwNiwyMjkuOTExNDMgQyAxMjguNDAyMzQsMjIxLjYyODY0IDEyNi40NjUzLDIwNC43MjU1NiAxMjQuMzQ3NjcsMTk1LjU5MDc5IEMgMTE2LjczMTY0LDE5NC43NDE1MSAxMTIuNzg2OTMsMTkyLjY0MTAyIDExMS4zNzE4NiwxODkuNjc4NDEgQyAxMDcuNzIzODMsMTg5LjY4MDgxIDEwMy43NjU0NSwxOTAuMzQ5NTIgMTAzLjc1NTY0LDE4Mi41NDAzIEMgOTMuODgwODU2LDE4Ny4xNzU3NSA4OS40MTc2ODcsMTc5LjQwOTcxIDg0Ljg1NjEwNSwxNzEuODY5MTcgQyA4MC4zNDIxNzQsMTY5LjYxNzM4IDc0Ljc1MTczNywxNzAuNDczMzEgNzMuMjIwMjAzLDE1OS42MTE4IEwgNzEuOTUwODIzLDE1Ni4wNzg3OCBDIDY5Ljg2NDA5NSwxNTMuMTAxOTkgNzAuODMxMTc0LDE0OC45MjQzMiA3MS4wMzQwNTUsMTQ1LjA0NzE1IEMgNzIuMzczOTUyLDE0Ny4wOTQ4IDczLjE0OTY3NywxNDcuNTk5NzkgNzQuNDg5NTc0LDE0OC4zNjM4NSBDIDY0LjQzMjc5NCwxMzYuMjIxODcgNzAuNDM2NjU2LDEyOC44MTY2NyA2OS4wNTk0NzYsMTE5LjIzNDU3IEMgNzEuNTQ3NTcyLDEyMC42MzE4NiA3My42MDQ5MDEsMTE5LjkzMDc4IDc1LjY4ODQxOSwxMTguNzI5ODYgTCA3MS4zMTYxNDEsMTE3LjcyMDQzIEMgNzEuMzE2MTQxLDExNy43MjA0MyA4OS40MjMzNzEsMTE3LjM3NzQ5IDc5Ljc3ODYyLDExNi4yNzgzOCBDIDcyLjMzNDQ0MiwxMTUuNDMwMDUgNzIuNzI2NTU2LDExMS4xNTkxMyA3Mi43MjY1NTYsMTExLjE1OTEzIEMgNzQuODkxNzIsMTEyLjM5MDYyIDc2LjgzMjkyMywxMTQuMDQzNzcgNzkuMDAyODk1LDExMi4wOTY0NiBDIDc4Ljk4ODg3NywxMDkuNTIzMzkgNzkuNzUzMTExLDEwNy40NDAwMSA4Mi4xNzYzMTksMTA2LjQwMDQxIEMgNzkuMTEyODk2LDEwMS44MTY1OSA4NC4wNzkwMTEsOTAuNTg2NjkxIDgxLjc1MzE5OCw4NS41NjI4NjcgQyA4My4xMzEyOCw4Ni41NDE3NzYgODQuMDU4Mzk4LDg4LjgyNzA3OCA4Ni40NzgwOCw4Ni43ODg2MDQgQyA4OC4wMjIwMjUsODIuNjQ0MjQzIDg4LjgzOTg5NCw4MS4xNDM3MTMgOTEuMTMyNDQ1LDgwLjQ0MzYxMiBDIDkyLjUwNjE2LDc2LjMwNjA1NCA5NC41ODA0Niw3My4zODYxOTMgOTcuODMxOTA1LDcyLjUxMjM3MiBDIDk3LjgzMTkwNSw3Mi41MTIzNzIgMTAyLjA4MDc4LDU4LjgxMjk1NiAxMDUuMDI1MDEsNTMuOTgyMTA5IEMgMTEyLjE5OTgzLDQyLjIwOTgwOCAxMTUuMjUwNSwzOS42NzQ3NjggMTI4Ljc5MDQ3LDMxLjAyMjUwNSBDIDE0Mi4xMTMzMSwyMi41MDg5OTUgMTUyLjQ5NjcyLDIyLjAyODM1IDE1OS4xODQ4NywyNS40NzA2MzYgQyAxNjMuMDAzNjMsMjcuNDM2MDkxIDE2NS40OTY0NywyNy43MDU4MDQgMTY3LjIyNDIzLDI3LjcwNTgwNSBDIDE3Mi4xOTU5MywyNy43MDU4MDUgMTc2LjAyMzQyLDIyLjQ4MDM0NiAxODkuNTc5MjcsMzAuNjYxOTk1IHogIgogICAgIHN0eWxlPSJmaWxsOiNjY2M7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOm5vbmU7c3Ryb2tlLXdpZHRoOjFweDtzdHJva2UtbGluZWNhcDpidXR0O3N0cm9rZS1saW5lam9pbjptaXRlcjtzdHJva2Utb3BhY2l0eToxIgogICAgIGlkPSJwYXRoMTg3MyIgLz4KPC9zdmc+Cg==">
+                    <table cellspacing="0" cellpadding="0" id="signature">
+                      <tbody>
+                        <tr>
+                          <td colspan="2" id="infoAvatar">
+                            <div id="nameWrap">
+                              <span class="name" id="preparedName">
+                                Nome
+                              </span>
+                              <span> - </span>
+                              <span class="designation">
+                                Meu Setor
+                              </span>
+                            </div>
+                            <div id="phoneWrap">
+                              <span>
+                                <svg class="icon-zap" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
+                                  width="48px" height="48px" fill-rule="evenodd" clip-rule="evenodd">
+                                  <path fill="#fff"
+                                    d="M4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98c-0.001,0,0,0,0,0h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303z" />
+                                  <path fill="#fff"
+                                    d="M4.868,43.803c-0.132,0-0.26-0.052-0.355-0.148c-0.125-0.127-0.174-0.312-0.127-0.483l2.639-9.636c-1.636-2.906-2.499-6.206-2.497-9.556C4.532,13.238,13.273,4.5,24.014,4.5c5.21,0.002,10.105,2.031,13.784,5.713c3.679,3.683,5.704,8.577,5.702,13.781c-0.004,10.741-8.746,19.48-19.486,19.48c-3.189-0.001-6.344-0.788-9.144-2.277l-9.875,2.589C4.953,43.798,4.911,43.803,4.868,43.803z" />
+                                  <path fill="#cfd8dc"
+                                    d="M24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,4C24.014,4,24.014,4,24.014,4C12.998,4,4.032,12.962,4.027,23.979c-0.001,3.367,0.849,6.685,2.461,9.622l-2.585,9.439c-0.094,0.345,0.002,0.713,0.254,0.967c0.19,0.192,0.447,0.297,0.711,0.297c0.085,0,0.17-0.011,0.254-0.033l9.687-2.54c2.828,1.468,5.998,2.243,9.197,2.244c11.024,0,19.99-8.963,19.995-19.98c0.002-5.339-2.075-10.359-5.848-14.135C34.378,6.083,29.357,4.002,24.014,4L24.014,4z" />
+                                  <path fill="#40c351"
+                                    d="M35.176,12.832c-2.98-2.982-6.941-4.625-11.157-4.626c-8.704,0-15.783,7.076-15.787,15.774c-0.001,2.981,0.833,5.883,2.413,8.396l0.376,0.597l-1.595,5.821l5.973-1.566l0.577,0.342c2.422,1.438,5.2,2.198,8.032,2.199h0.006c8.698,0,15.777-7.077,15.78-15.776C39.795,19.778,38.156,15.814,35.176,12.832z" />
+                                  <path fill="#fff" fill-rule="evenodd"
+                                    d="M19.268,16.045c-0.355-0.79-0.729-0.806-1.068-0.82c-0.277-0.012-0.593-0.011-0.909-0.011c-0.316,0-0.83,0.119-1.265,0.594c-0.435,0.475-1.661,1.622-1.661,3.956c0,2.334,1.7,4.59,1.937,4.906c0.237,0.316,3.282,5.259,8.104,7.161c4.007,1.58,4.823,1.266,5.693,1.187c0.87-0.079,2.807-1.147,3.202-2.255c0.395-1.108,0.395-2.057,0.277-2.255c-0.119-0.198-0.435-0.316-0.909-0.554s-2.807-1.385-3.242-1.543c-0.435-0.158-0.751-0.237-1.068,0.238c-0.316,0.474-1.225,1.543-1.502,1.859c-0.277,0.317-0.554,0.357-1.028,0.119c-0.474-0.238-2.002-0.738-3.815-2.354c-1.41-1.257-2.362-2.81-2.639-3.285c-0.277-0.474-0.03-0.731,0.208-0.968c0.213-0.213,0.474-0.554,0.712-0.831c0.237-0.277,0.316-0.475,0.474-0.791c0.158-0.317,0.079-0.594-0.04-0.831C20.612,19.329,19.69,16.983,19.268,16.045z"
+                                    clip-rule="evenodd" />
+                                </svg></span>
+                              <span class="phone">(35) 3068-4000</span>
+                            </div>
+                            <span style="white-space:nowrap" id="logoWrap">
+                              <img src="" class="logo">
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="mb-5">
+                  <div class="controls">
+                    <a class="btn btn-primary" id="btnSave" download="avatar.png">Baixar Avatar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+      <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+      <script src="https://unpkg.com/imask@6.4.2/dist/imask.js"></script>
+      <script src="./script.js"></script>
+    </div>
+  </div>
+</body>
+
+</html>
