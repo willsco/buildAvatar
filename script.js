@@ -23,7 +23,7 @@
   doc.addEventListener("DOMContentLoaded", function () {
     var phoneMask = IMask(
       document.getElementById('phone'), {
-      mask: '(00) 0 0000-0000'
+      mask: ['(00) 0000-00009', '(00) 0 0000-0000']
     });
   });
 
