@@ -23,7 +23,6 @@
   doc.addEventListener("DOMContentLoaded", function () {
     var phoneMask = IMask(
       document.getElementById('phone'), {
-<<<<<<< HEAD
       mask: [
         {
           mask: '(00) 0000-0000'
@@ -31,9 +30,6 @@
         {
           mask: '(00) 0 0000-0000'
         }]
-=======
-      mask: ['(00) 0000-00009', '(00) 0 0000-0000']
->>>>>>> d4a381024c2edb19db53aa49d667b58cee576a9d
     });
   });
 
