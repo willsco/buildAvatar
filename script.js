@@ -23,7 +23,13 @@
   doc.addEventListener("DOMContentLoaded", function () {
     var phoneMask = IMask(
       document.getElementById('phone'), {
-      mask: '(00) 0 0000-0000'
+      mask: [
+        {
+          mask: '(00) 0000-0000'
+        },
+        {
+          mask: '(00) 0 0000-0000'
+        }]
     });
   });
 
@@ -35,7 +41,7 @@
       }
     });
   });
-  
+
   assdown.addEventListener("mouseover", function canvasGen() {
     html2canvas(signature, { letterRendering: 1, allowTaint: true, useCORS: true }).then(function (canvas) {
       assdown.href = canvas.toDataURL("image/png");;
