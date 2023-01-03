@@ -34,7 +34,7 @@
       uploadfield.style.display = 'flex';
       withoutphoto.style.display = 'none';
       name.classList.remove("without-photo-title");
-      name.classList.remove("without-photo-subtitle");
+      des_branch.classList.remove("without-photo-subtitle");
     } else {
       uploadfield.style.display = 'none';
       withoutphoto.style.display = 'flex';
