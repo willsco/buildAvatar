@@ -6,9 +6,7 @@
   var uploadfield = doc.querySelector('.upload-field');
   var withoutphoto = doc.querySelector('.without-photo');
   var name = doc.querySelector('.preparedName');
-  var designation = doc.querySelector('.designation');
-  var branch = doc.querySelector('.branch');
-
+  var des_branch = doc.querySelector('#des-branch');
 
   var inputs = doc.querySelectorAll('form .form-control');
 
@@ -36,16 +34,18 @@
       uploadfield.style.display = 'flex';
       withoutphoto.style.display = 'none';
       name.classList.remove("without-photo-title");
+      name.classList.remove("without-photo-subtitle");
     } else {
       uploadfield.style.display = 'none';
       withoutphoto.style.display = 'flex';
       name.classList.add("without-photo-title");
+      des_branch.classList.add("without-photo-subtitle");
     }
   });
 
   assdown.addEventListener("mouseover", function canvasGen() {
     html2canvas(signature, { letterRendering: 1, allowTaint: true, useCORS: true }).then(function (canvas) {
-      assdown.href = canvas.toDataURL("image/png");;
+      assdown.href = canvas.toDataURL("image/png");
     });
   });
 })(window);
