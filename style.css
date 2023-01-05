@@ -118,3 +118,28 @@ div.container {
 .upload-field{
     display: none;
 }
+
+.btn-primary,.form-check-input:checked {
+    background-color: #b02a37;
+    border-color: #b02a37;
+}
+
+.form-control:focus, .form-check-input:focus {
+    border-color: #fe8686;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(253, 13, 13, 0.25);
+}
+
+.btn-primary:hover, .btn:focus-visible {
+    background-color: #871919;
+    border-color: #871919;
+}
+
+.btn:focus-visible {
+    box-shadow: 0 0 0 0.24rem rgb(135 25 25 / 50%);
+}
+
+.btn-primary:active {
+    background-color: #871919 !important;
+    border-color: #871919 !important;
+}
