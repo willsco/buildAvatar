@@ -151,3 +151,8 @@ div.container {
     width: 100% !important;
     max-width: 500px;
 }
+
+.help-file{
+    margin: 0 auto;
+    display: block;
+}
