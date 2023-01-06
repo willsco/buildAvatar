@@ -6,11 +6,13 @@
   var uploadfield = doc.querySelector('.upload-field');
   var withoutphoto = doc.querySelector('.without-photo');
   var name = doc.querySelector('.preparedName');
-  var des_branch = doc.querySelector('#des-branch');
+  //var des_branch = doc.querySelector('#des-branch');
   var inputs = doc.querySelectorAll('form .form-control');
+  const options = doc.querySelectorAll('.designation, .custom-separator, .branch');
+
 
   var url = 'assets/docs/manual.pdf';
-  var pdfjsLib = window['pdfjs-dist/build/pdf'];
+  var pdfjsLib = w['pdfjs-dist/build/pdf'];
   pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.2.146/pdf.worker.min.js';
   var loadingTask = pdfjsLib.getDocument(url);
 
@@ -24,7 +26,7 @@
     var element = doc.querySelector('.' + id);
     element.innerHTML = value;
   }
-  window.addEventListener('load', function () {
+  w.addEventListener('load', function () {
     document.querySelector('input[type="file"]').addEventListener('change', function () {
       if (this.files && this.files[0]) {
         let img = document.querySelector('img');
@@ -38,12 +40,16 @@
       uploadfield.style.display = 'flex';
       withoutphoto.style.display = 'none';
       name.classList.remove("without-photo-title");
-      des_branch.classList.remove("without-photo-subtitle");
+      for (const option of options) {
+        option.classList.remove("without-photo-subtitle");
+      }
     } else {
       uploadfield.style.display = 'none';
       withoutphoto.style.display = 'flex';
       name.classList.add("without-photo-title");
-      des_branch.classList.add("without-photo-subtitle");
+      for (const option of options) {
+        option.classList.add("without-photo-subtitle");
+      }
     }
   });
 
