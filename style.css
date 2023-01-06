@@ -7,7 +7,7 @@ div.container {
 
 #myImg {
     width: 100%;
-    z-index: 1;
+    /*z-index: 1;*/
     position: absolute
 }
 
@@ -83,6 +83,7 @@ div.container {
 }
 
 .designation,
+.custom-separator,
 .branch {
     font-size: 15pt;
     font-weight: normal
@@ -97,6 +98,7 @@ div.container {
     display: block
 }
 
+/*
 .display-4.mb-5 {
     margin-bottom: 0rem !important
 }
@@ -104,7 +106,7 @@ div.container {
 .container.p-5 {
     padding-bottom: 0 !important
 }
-
+*/
 .without-photo-title {
     font-size: 25pt;
     font-weight: bold;
@@ -115,6 +117,37 @@ div.container {
     font-weight: normal;
 }
 
-.upload-field{
+.upload-field {
     display: none;
+}
+
+.btn-primary, .form-check-input:checked {
+    background-color: #bd0900;
+    border-color: #bd0900;
+}
+
+.form-control:focus, .form-check-input:focus {
+    border-color: #fe8686;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(253, 13, 13, 0.25);
+}
+
+.btn-primary:hover, .btn:focus-visible {
+    background-color: #871919;
+    border-color: #871919;
+}
+
+.btn:focus-visible {
+    box-shadow: 0 0 0 0.24rem rgb(189 9 0 / 50%);
+}
+
+.btn-primary:active {
+    background-color: #871919 !important;
+    border-color: #871919 !important;
+}
+
+.offcanvas {
+    overflow: auto;
+    width: 100% !important;
+    max-width: 500px;
 }
