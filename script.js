@@ -6,9 +6,9 @@
   var uploadfield = doc.querySelector('.upload-field');
   var withoutphoto = doc.querySelector('.without-photo');
   var name = doc.querySelector('.preparedName');
-  //var des_branch = doc.querySelector('#des-branch');
   var inputs = doc.querySelectorAll('form .form-control');
   const options = doc.querySelectorAll('.designation, .custom-separator, .branch');
+  var table = doc.querySelector('#signature');
 
 
   var url = 'assets/docs/manual.pdf';
@@ -40,6 +40,7 @@
       uploadfield.style.display = 'flex';
       withoutphoto.style.display = 'none';
       name.classList.remove("without-photo-title");
+      table.classList.add("table-container");
       for (const option of options) {
         option.classList.remove("without-photo-subtitle");
       }
@@ -47,6 +48,7 @@
       uploadfield.style.display = 'none';
       withoutphoto.style.display = 'flex';
       name.classList.add("without-photo-title");
+      table.classList.remove("table-container");
       for (const option of options) {
         option.classList.add("without-photo-subtitle");
       }
@@ -54,7 +56,7 @@
   });
 
   assdown.addEventListener("mouseover", function canvasGen() {
-    html2canvas(signature, { letterRendering: 1, allowTaint: true, useCORS: true }).then(function (canvas) {
+    html2canvas(signature, { letterRendering: 1, allowTaint: true, useCORS: true, windowWidth: 660, windowHeight: 660 }).then(function (canvas) {
       assdown.href = canvas.toDataURL("image/png");
     });
   });

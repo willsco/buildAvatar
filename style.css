@@ -74,7 +74,7 @@ div.container {
 }
 
 #infoAvatar {
-    padding: 1px 1px
+    padding: 1px
 }
 
 .preparedName {
@@ -121,18 +121,21 @@ div.container {
     display: none;
 }
 
-.btn-primary, .form-check-input:checked {
+.btn-primary,
+.form-check-input:checked {
     background-color: #bd0900;
     border-color: #bd0900;
 }
 
-.form-control:focus, .form-check-input:focus {
+.form-control:focus,
+.form-check-input:focus {
     border-color: #fe8686;
     outline: 0;
     box-shadow: 0 0 0 0.25rem rgba(253, 13, 13, 0.25);
 }
 
-.btn-primary:hover, .btn:focus-visible {
+.btn-primary:hover,
+.btn:focus-visible {
     background-color: #871919;
     border-color: #871919;
 }
@@ -152,7 +155,42 @@ div.container {
     max-width: 500px;
 }
 
-.help-file{
+.help-file {
     margin: 0 auto;
     display: block;
+}
+
+@media(max-width: 575px) {
+
+    .designation, .custom-separator, .branch{
+        font-size: 67%;
+    }
+
+    .preparedName{
+        font-size: 80%;
+    }
+
+    .table-container {
+        height: 27%;
+        bottom: -1%;
+    }
+    
+    #signature {
+        bottom: 1%;
+        height: 29%;
+    }
+    .without-photo-title {
+        font-size: 107%;
+    }
+
+    .without-photo-subtitle {
+        font-size: 67%;
+    }
+
+
+
+    #nameWrap,
+    #phoneWrap {
+        line-height: normal;
+    }
 }
