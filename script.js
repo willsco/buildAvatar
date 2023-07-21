@@ -7,6 +7,7 @@
   var withoutphoto = doc.querySelector('.without-photo');
   var name = doc.querySelector('.preparedName');
   var inputs = doc.querySelectorAll('form .form-control');
+  var select = document.getElementById('branch');
   const options = doc.querySelectorAll('.designation, .custom-separator, .branch');
   var table = doc.querySelector('#signature');
 
@@ -19,6 +20,7 @@
   for (var i = inputs.length - 1; i >= 0; i--) {
     inputs[i].addEventListener('keyup', updateSignature);
   }
+  select.addEventListener('change', updateSignature);
 
   function updateSignature(e) {
     var id = e.target.id;
